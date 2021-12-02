@@ -178,6 +178,21 @@ begin
 	(increasing_sum_counter)
 end
 
+# ╔═╡ 00000000-0000-0000-0000-000000000001
+PLUTO_PROJECT_TOML_CONTENTS = """
+[deps]
+"""
+
+# ╔═╡ 00000000-0000-0000-0000-000000000002
+PLUTO_MANIFEST_TOML_CONTENTS = """
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.7.0"
+manifest_format = "2.0"
+
+[deps]
+"""
+
 # ╔═╡ Cell order:
 # ╠═cdeddb50-52d2-11ec-38a8-c5d56295952f
 # ╠═4c862432-92c5-4c8b-b843-1d95d752bc69
@@ -185,3 +200,5 @@ end
 # ╠═f2d00fa6-0370-436a-bed7-e3c86c2f4547
 # ╠═3d91d0d9-de7e-4aef-9e2d-0e03c96c31ad
 # ╠═3c9f2b64-b3af-4fa3-b668-0b57aabfad73
+# ╟─00000000-0000-0000-0000-000000000001
+# ╟─00000000-0000-0000-0000-000000000002
