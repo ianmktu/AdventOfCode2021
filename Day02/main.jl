@@ -45,7 +45,7 @@ Calculate the horizontal position and depth you would have after following the p
 
 # ╔═╡ 1b840d5a-8b64-4b45-8537-849674f9c548
 begin		
-	println("\nDay 2")
+	println("\nDay 2: Dive!")
 	
 	script_dir = dirname(Base.@__FILE__)
 	input_file = joinpath(script_dir, "input.txt")
