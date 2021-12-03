@@ -45,7 +45,7 @@ Use the binary numbers in your diagnostic report to calculate the gamma rate and
 
 # ╔═╡ 1b840d5a-8b64-4b45-8537-849674f9c548
 begin		
-	println("\nDay 3:")
+	println("\nDay 3: Binary Diagnostic")
 	
 	script_dir = dirname(Base.@__FILE__)
 	input_file = joinpath(script_dir, "input.txt")
@@ -75,9 +75,8 @@ begin
 		end
 	end
 
-
-	gamma_binary_str = ""
-	epsilon_binary_str = ""
+	local gamma_binary_str = ""
+	local epsilon_binary_str = ""
 	for digit in 1:length(dict)
 		if dict[digit] < length(lines)/2
 			gamma_binary_str *= "0"
@@ -88,12 +87,11 @@ begin
 		end
 	end
 
-	println(typeof(gamma_binary_str))
 	gamma = parse(Int64, gamma_binary_str; base=2)
 	epsilon = parse(Int64, epsilon_binary_str; base=2)	
 	consumption = gamma * epsilon
 	
-	println("Part 1: ", consumption, "\n")
+	println("Part 1: ", consumption)
 	("gamma" => gamma, "epsilon" => epsilon, "consumption" => consumption)
 end
 
@@ -136,8 +134,8 @@ Use the binary numbers in your diagnostic report to calculate the oxygen generat
 
 # ╔═╡ 3c9f2b64-b3af-4fa3-b668-0b57aabfad73
 begin		
-	oxygen_binary_str = ""
-	current_binary_str = ""
+	local oxygen_binary_str = ""
+	local current_binary_str = ""
 	for digit in 1:length(lines[1])
 		counter = 0
 		current_total = 0
@@ -178,10 +176,8 @@ begin
 
 	oxygen = parse(Int64, current_binary_str; base=2)	
 
-
-
-	co2_binary_str = ""
-	current_binary_str = ""
+	local co2_binary_str = ""
+	local current_binary_str = ""
 	for digit in 1:length(lines[1])
 		counter = 0
 		current_total = 0
