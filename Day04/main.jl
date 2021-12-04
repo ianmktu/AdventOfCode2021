@@ -218,7 +218,6 @@ begin
 			if skip
 				continue
 			end
-
 			
 			for ticket_num in 1:length(board)
 				delete!(boards_as_sets_copy[board_index][ticket_num], num)
