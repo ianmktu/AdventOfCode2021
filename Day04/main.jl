@@ -77,7 +77,7 @@ To guarantee victory against the giant squid, figure out which board will win fi
 
 # ╔═╡ 1b840d5a-8b64-4b45-8537-849674f9c548
 begin		
-	println("\nDay 4")
+	println("\nDay 4: Giant Squid")
 	
 	script_dir = dirname(Base.@__FILE__)
 	input_file = joinpath(script_dir, "input.txt")
