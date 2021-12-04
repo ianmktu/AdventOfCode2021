@@ -9,8 +9,21 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 * Each folder has two files
   * Question and Solution File: `main.jl`
   * Data File: `input.txt`
-* To run a day from the `AdventOfCode2021` folder: 
+* To run a day from the `AdventOfCode2021` folder from command line: 
 ```
 # Replace $$ with the day you want
 julia ./Day$$/main.jl
+```
+* Alternatively, you can run it as a [Pluto](https://github.com/fonsp/Pluto.jl) notebook instead:
+```
+# Install Pluto
+julia
+julia> ]
+(v1.7) pkg> add Pluto
+
+# Then start Pluto
+julia> import Pluto
+julia> Pluto.run()
+
+# Finally, from the Pluto start screen, open a solution file and then run
 ```
