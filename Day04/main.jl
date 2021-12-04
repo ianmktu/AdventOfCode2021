@@ -198,7 +198,6 @@ Figure out which board will win last. Once it wins, what would its final score b
 begin		
 	local winning_boards = Vector{Int}(undef, length(boards_as_sets))
 	local boards_as_sets_copy = deepcopy(boards_as_sets)
-	
 
 	local board_count = 0
 
@@ -238,7 +237,6 @@ begin
 			
 		end
 	end
-
 		
 	local total = 0
 	for ticket_num in 1:length(boards_as_sets[1][1])
@@ -248,7 +246,7 @@ begin
 	end
 
 	local final_score = winning_num * total
-	println("Part 2: ", final_score)
+	println("Part 2: ", final_score, "\n")
 	(winning_num, total, final_score, winning_board, winning_ticket)
 end
 
