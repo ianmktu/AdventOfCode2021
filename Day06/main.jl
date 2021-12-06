@@ -87,11 +87,19 @@ end
 
 # ╔═╡ dfe034c8-820c-498b-a227-777515c4cee5
 begin		
-	local initial_state_copy = deepcopy(initial_state)
-	local current_size = length(initial_state)
-	local day_dict = Dict(0 => 0, 1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 0, 6 => 0, 7 => 0, 8 => 0)
+	local day_dict = Dict(
+		0 => 0, 
+		1 => 0, 
+		2 => 0, 
+		3 => 0, 
+		4 => 0, 
+		5 => 0, 
+		6 => 0, 
+		7 => 0, 
+		8 => 0
+	)
 
-	for num in initial_state_copy
+	for num in initial_state
 		day_dict[num] += 1
 	end
 
@@ -128,11 +136,19 @@ After 256 days in the example above, there would be a total of `26984457539` lan
 
 # ╔═╡ 3c9f2b64-b3af-4fa3-b668-0b57aabfad73
 begin		
-	local initial_state_copy = deepcopy(initial_state)
-	local current_size = length(initial_state)
-	local day_dict = Dict(0 => 0, 1 => 0, 2 => 0, 3 => 0, 4 => 0, 5 => 0, 6 => 0, 7 => 0, 8 => 0)
+	local day_dict = Dict(
+		0 => 0, 
+		1 => 0, 
+		2 => 0, 
+		3 => 0, 
+		4 => 0, 
+		5 => 0, 
+		6 => 0, 
+		7 => 0, 
+		8 => 0
+	)
 
-	for num in initial_state_copy
+	for num in initial_state
 		day_dict[num] += 1
 	end
 
